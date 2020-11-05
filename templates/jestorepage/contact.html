@@ -1,0 +1,25 @@
+
+{% extends "shared/base.html" %}
+{% load static %}
+
+{% block title %}
+Contact @ Jestore 
+{% endblock title %}
+
+
+{% block main %}
+  <section>
+    <h2 class="messagehead">
+      Fill the form below to send us a message
+    </h2>
+    <div class="messagecontent">
+      <label for="">Username</label> <input type="text" placeholder="Input your username"><br><br>
+      <label for="">Phone Number</label> <input type="tel" placeholder="Input your phone number"><br><br>
+      <label for="">Gender</label> <br>
+        Male <input type="radio" name="radiomessage" id="radiomessage"><br>
+        Female <input type="radio" name="radiomessage" id="radiomessage"><br>
+        Hermaphrodite <input type="radio" name="radiomessage" id="radiomessage"><br><br>
+      <label for="">Message Body</label> <input width="200px" height="100px" type="text" placeholder="Input your username"><br><br>
+    </div>
+  </section>
+{% endblock main %}
